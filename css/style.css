@@ -3,8 +3,10 @@ body{
 }
 
 .page{
+    max-width: 1024px;
+    color: dimgray;
     background-color: whitesmoke;
-    margin: 0px 20px;
+    margin: 50px auto;
     box-shadow: 0px 0px 3px black;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -13,29 +15,57 @@ body{
 #header{
     width: 95%;
     display: inline-block;
-
+    text-align: left;
 }
 
 .menu ul{
+    line-height: 2.5;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
-    text-align: left;
-    list-style: none;
+    padding-left: 0;
 }
 
 .menu li{
     display: inline-block;
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%;
+    margin-right: 40px;
+}
+
+.link{
+    color: dimgray;
+    text-align: left;
+    text-decoration: none;
+}
+
+h1 a.link:hover{
+    color: darkcyan;
+}
+
+.link:hover{
+    color: black;
 }
 
 #content ul{
     list-style: none;
+    padding-left: 0;
 }
 
 #content li{
-    width: 25%;
+    width: 20.6%;
+    height: 200px;
     float: left;
     text-decoration: none;
+    border: 4px solid rgb(211, 211, 211, .5);
+    border-radius: 4px;
+    margin: 0 0 30px 30px;
+}
+
+#content li:hover{
+    border: 4px solid darkcyan;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px gray;
 }
 
 .clear{
@@ -46,4 +76,5 @@ body{
     width: 95%;
     display: inline-block;
     border-top: 1px solid lightgray;
+    text-align: left;
 }
